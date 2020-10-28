@@ -1,6 +1,6 @@
 function destinationMapper(input) {
 
-    let pattern = /([=/])(?<city>[A-Z][a-z]{2,})(\1)/g;
+    let pattern = /([=/])(?<city>[A-Z][A-Za-z]{2,})(\1)/g;
     let validPlaces = input.matchAll(pattern);
     let sum = 0;
     let places = [];
