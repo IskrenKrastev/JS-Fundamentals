@@ -18,7 +18,7 @@ function computerStore(input) {
     }
 
     if (sum === 0) {
-        console.log('Invalid order !');
+        console.log('Invalid order!');
     } else {
         taxes = sum * 0.20;
         totalSum = sum + taxes;
@@ -38,8 +38,6 @@ function computerStore(input) {
 
         }
     }
-
-
 
 }
 computerStore([
