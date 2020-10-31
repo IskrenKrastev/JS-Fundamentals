@@ -1,6 +1,6 @@
 function emojiDetector(input) {
 
-    let pattern = /([:*]{2})(?<emoji>[A-Z][a-z]{2,})\1/g;
+    let pattern = /([:]{2}|[*]{2})(?<emoji>[A-Z][a-z]{2,})(\1)/g;
     let emojis = input[0].matchAll(pattern);
     let newEmojisArr = [];
 
@@ -41,7 +41,7 @@ function emojiDetector(input) {
 
 }
 emojiDetector([
-    'aa 1 aaa'
+    'In the Sofia Zoo there are 311 animals in total! ::Smiley:: This includes 3 **Tigers**, 1 ::Elephant:, 12 **Monk3ys**, a **Gorilla::, 5 ::fox:es: and 21 different types of :Snak::Es::. ::Mooning:: **Shy**'
 ]);
 emojiDetector([
     '5, 4, 3, 2, 1, go! The 1-th consecutive banana-eating contest has begun! ::Joy:: **Banana** ::Wink:: **Vali** ::valid_emoji::'
